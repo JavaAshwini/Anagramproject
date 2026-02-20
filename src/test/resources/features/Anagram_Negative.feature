@@ -8,7 +8,7 @@ Feature: Anagram checker
     When I check if there are anagrams
     Then the result should be "<output>"
     Examples:
-      | input1          | input2          | output |
-      | hello           | world           | true  |
-      | rat             | car             | false  |
+      | input1 | input2 | output |
+      | hello  | world  | true   |
+      | rat    | car    | false  |
 
