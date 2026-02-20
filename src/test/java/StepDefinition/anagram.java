@@ -16,7 +16,12 @@ public class anagram {
     boolean isAnagram=false;
 //    anagramSteps anagramSteps;
 
-    @Given("the input strings {string} and {string}")
+//    @Given("the input strings {string} and {string}")
+//    public void the_input_strings_and(String Input1, String Input2) {
+//   this.str1=Input1;
+//   this.str2 =Input2;
+//    }
+    @Given("^the input strings \"([^\"]*)\" and \"([^\"]*)\"$")
     public void the_input_strings_and(String Input1, String Input2) {
    this.str1=Input1;
    this.str2 =Input2;
@@ -36,6 +41,8 @@ public class anagram {
 
         Assert.assertEquals(isAnagram,result);
     }
+
+
 }
 
 
