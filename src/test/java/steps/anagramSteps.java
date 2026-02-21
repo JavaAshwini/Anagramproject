@@ -1,26 +1,28 @@
 package steps;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import java.util.Arrays;
 
-public class anagramSteps {
+public class AnagramSteps {
     String Input1, Input2;
 
-//    @Given("the input strings {string} and {string}")
-//    public void the_input_strings_and(String Input1, String Input2) {
-//
-//    }
-//
-//    @When("I check if there are anagrams")
-//    public void i_check_if_there_are_anagrams() {
-//
-//    }
-//
-//    @Then("the result should be {string}")
-//    public void the_result_should_be(String result) {
-//
-//    }
+    private boolean checkAnagram(String Input1, String Input2) {
+
+        Input1 = Input1.toLowerCase().trim().replace(" ", "");
+        Input2 = Input2.toLowerCase().trim().replace(" ", "");
+        System.out.println(Input1);
+        System.out.println(Input2);
+        if (Input1.length() == Input2.length()) {
+            char[] ch1 = Input1.toCharArray();
+            char[] ch2 = Input2.toCharArray();
+
+            Arrays.sort(ch1);
+            Arrays.sort(ch2);
+
+            return Arrays.equals(ch1, ch2);
+
+        } else
+            return false;
+    }
 }
 
 

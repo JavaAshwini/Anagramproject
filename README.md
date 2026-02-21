@@ -1,4 +1,4 @@
-# AnagramProject1
+# AnagramProject
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/ashwinispawar2005-group/anagramproject1.git
+git remote add origin https://gitlab.com/ashwinispawar2005-group/AnagramProject.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-* [Set up project integrations](https://gitlab.com/ashwinispawar2005-group/anagramproject1/-/settings/integrations)
+* [Set up project integrations](https://gitlab.com/ashwinispawar2005-group/AnagramProject/-/settings/integrations)
 
 ## Collaborate with your team
 
