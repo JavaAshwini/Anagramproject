@@ -1,7 +1,5 @@
 package steps;
 
-import org.testng.Assert;
-
 import java.util.Arrays;
 
 /**
