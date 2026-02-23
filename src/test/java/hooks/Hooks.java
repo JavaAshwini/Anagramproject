@@ -2,8 +2,7 @@ package Hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 public class Hooks {
 
